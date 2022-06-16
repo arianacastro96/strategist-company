@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: Roboto;
+}
+
+body {
+    padding-top: 80px;
+}
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E4505D;
+    height: 80px;
+    color: aliceblue;
+}
+
+.nav-container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button-github{
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-img{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+}
+
+.nav-input{
+    display: none;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+    transition: height .75s ease;
+    background-color: #E4505D;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    margin-bottom: 2rem;
+}
+
+
+.nav-item::after{
+    content: "";
+    display: block;
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: 3px;
+    height: 2px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.nav-item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav-input:checked + .nav-menu {
+    height: calc(100vh - 80px);
+}
+
+
+/* Desktop and up */
+@media (min-width: 768px){
+    .nav-label{
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        height: auto!important;
+    }
+    
+    .nav-item {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+
+
+h1{ 
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2{
+    color: #E4505D;
+    margin-bottom: 30px;
+}
+
+h3{
+    color: #E4505D;
+    margin-bottom: 20px;
+}
+
+.inicial-buttons{
+    gap: 1em;
+}
+
+.button-primary{
+    border:1px solid transparent;
+    border-radius: 3px;
+    background-color: #E4505D;
+    color:white;
+    box-shadow: 2px 2px 5px #999;
+    padding: 10px 15px;
+    width: 150px;
+    height: 30px;
+}
+
+.button-secondary{
+    border:1px solid #E4505D;
+    border-radius: 3px;
+    background-color: white;
+    color:#E4505D;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.button-outline{
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    padding: 2px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.items-container{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 80%;
+}
+
+.item-image{
+    width:200px;
+    height: 200px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-input{
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+footer{
+    margin-top: 30px;
+    height: 200px;
+    background-color: #E4505D;
+}
+
