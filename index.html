@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <script src="/path/to/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="estilo.css">
     <title>The strategist Company</title>
 </head>
@@ -29,6 +31,7 @@
         </nav>
     </header>
     <main>
+        <img id="header-img" src="imagenes/header.png">
         <h1>Welcome to the CrashCourse</h1>
         <div class="center inicial-buttons">
             <button class="button-secondary">Lets Start</button>
@@ -39,37 +42,62 @@
         </div>
         <img  src="imagenes/flecha-abajo.png">
         
-        <div class="items-container">
-            <h2>All of the best things in one place</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, unde omnis, non temporibus soluta illum quo dignissimos vitae sapiente odio dicta quam commodi corporis nobis explicabo reiciendis alias esse fuga.</p>
-            <img class="item-image" src="imagenes/imagen1.png">
-            <h3>
-                Data Analysis Made Easy
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim explicabo temporibus fugiat similique adipisci, consequuntur saepe rerum quibusdam. Inventore cum non aspernatur ratione aut a ad nam placeat omnis.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
-            <img class="item-image" src="imagenes/imagen2.png">
-            <h3>
-                Modern Design For Better SEO
-            </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat iure provident in qui, aliquid totam ullam necessitatibus voluptates iusto quis animi non? Quidem, impedit iusto debitis molestiae doloribus autem.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
-            <img class="item-image" src="imagenes/imagen3.png">
-            <h3>
-                Saranga Saranga Saranga :)
-            </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat iure provident in qui, aliquid totam ullam necessitatibus voluptates iusto quis animi non? Quidem, impedit iusto debitis molestiae doloribus autem.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
+        <div id="services-container">
+            <div class="service service-full-width">
+                <div class="service-info">
+                    <h2>All of the best things in one place</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, unde omnis, non temporibus soluta illum quo dignissimos vitae sapiente odio dicta quam commodi corporis nobis explicabo reiciendis alias esse fuga.</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <div class="service-img">
+                    <img class="item-image" src="imagenes/imagen1.png">
+                </div>
+                <div class="service-info">
+                    <h3>Data Analysis Made Easy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim explicabo temporibus fugiat similique adipisci, consequuntur saepe rerum quibusdam. Inventore cum non aspernatur ratione aut a ad nam placeat omnis.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
+                </div>
+            </div>
+            
+            <div class="service service-inverted">
+                <div class="service-img">
+                    <img class="item-image" src="imagenes/imagen2.png">
+                </div>
+                <div class="service-info">
+                    <h3>Modern Design For Better SEO</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat iure provident in qui, aliquid totam ullam necessitatibus voluptates iusto quis animi non? Quidem, impedit iusto debitis molestiae doloribus autem.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <div class="service-img">
+                    <img class="item-image" src="imagenes/imagen3.png">
+                </div>
+                <div class="service-info">
+                    <h3>Saranga Saranga Saranga :)</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat iure provident in qui, aliquid totam ullam necessitatibus voluptates iusto quis animi non? Quidem, impedit iusto debitis molestiae doloribus autem.Inventore cum non aspernatur ratione aut a ad nam placeat omnis</p>
+                </div>
+            </div>
         </div>
-
-        <h2 class="center">Lets get in touch!</h2>
+        <h2 class="center">Some of our clientes</h2>
+        <div class="main-carousel">
+            <div class="carousel-cell"><img src="imagenes/coca-cola.png"></div>
+            <div class="carousel-cell"><img src="imagenes/powerade.png"></div>
+            <div class="carousel-cell"><img src="imagenes/under-armour.png"></div>
+            <div class="carousel-cell"><img src="imagenes/bbva.png"></div>
+        </div>
+        <h3 class="center">Lets get in touch!</h3>
         <div class="form-content">
-            <input class="form-input" type="text" placeholder="Fullname">
+            <input class="form-input input-check" type="text" placeholder="Fullname">
             <input class="form-input" type="text" placeholder="Email">
             <input class="form-input" type="text" placeholder="Phone number">
             <input class="form-input" type="text" placeholder="Company">
+            <button class="button-primary"> Send! </button>
         </div>
-        <button class="button-primary"> Send! </button>
     </main>
     <footer>
-        este es el pie de pagina
+        <img class="footer-img" src="imagenes/textura.png">
     </footer>
 </body>
 </html>
