@@ -59,5 +59,5 @@ function sendButtonOnClick(){
 }
 
 function githubButtonOnClick(){
-  location.href = 'https://github.com/stategist-company/';
+  location.href = 'https://github.com/arianacastro96/strategist-company';
 }
