@@ -1,0 +1,68 @@
+footer{
+    height: 30vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4505d+0,f36c4c+100 */
+    background: rgb(228,80,93); /* Old browsers */
+    background: -moz-linear-gradient(2deg,  rgba(228,80,93,1) 0%, rgba(243,108,76,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(88deg,  rgba(228,80,93,1) 0%,rgba(243,108,76,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(228,80,93,1) 0%,rgba(243,108,76,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4505d', endColorstr='#f36c4c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    .wrapper-footer{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+    }    
+
+    p{  
+        width: 49%;
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    .social-network-container{
+        display: flex;
+        justify-content: flex-end;
+        width: 49%;
+        a{
+            margin-right: 15px;
+            img{
+                height: 25px;
+                width: 25px;           
+            }
+        }
+    }
+    
+    .bases-condiciones-container{
+        display: flex;
+        justify-content: center;
+        a{  
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media screen and (max-width:786px){
+        p{  
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .social-network-container{
+            width: 100%;
+            justify-content: center;
+        }
+        .bases-condiciones-container{
+            display: flex;
+            flex-wrap: wrap;
+            #copyright{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}

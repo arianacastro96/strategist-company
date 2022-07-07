@@ -1,0 +1,50 @@
+#slider-section {
+    margin-bottom: 80px;
+    h2{
+        margin-bottom: 50px;
+        position: relative;
+        
+        &:after {
+            content: "";
+            display: block;
+            width: 25%;
+            height: 2px;
+            background: #EA5C55;
+            position: absolute;
+            bottom: 0;
+            left: 38%;
+        }
+    }
+    #sliderWrapper{
+     position: relative;   
+    }
+
+    .slider {
+        .slide {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+            img {
+                max-height: 100px;
+            }
+        }    
+    }
+    
+    .slider-arrow {
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    #sliderArrowRight{
+        right: 0px;
+    }
+}

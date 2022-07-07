@@ -1,0 +1,118 @@
+#form {
+    position: relative;
+    background-image: url('images/textura.svg');
+    background-repeat: repeat;
+    background-size: 450px;
+    min-height: 75vh;
+    padding: 1rem 0;
+
+    #contactThankYou {
+        display: none;
+        text-align: center;
+
+        span {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        height: 80px;
+        width: 100%;
+        background: url('images/form-cutout.svg');
+        background-size: 150%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        background-position-y: 0;
+        background-position-x: center;
+        left: 0;
+    }
+    
+    h2{ 
+        margin-bottom: 80px;
+        position: relative;
+        
+        &:after {
+            content: "";
+            display: block;
+            width: 14%;
+            height: 2px;
+            background: #EA5C55;
+            position: absolute;
+            bottom: 0;
+            left: 43%;
+        }
+    }
+    
+    .form-content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+    }
+    
+    .form-group {
+        position: relative;
+        width: 50%;
+
+        &.error {
+            .info-error {
+                display: block;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                width: 20px;
+                height: 20px;
+                background-image: url('images/exclamation.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        
+    }
+    
+    .form-input{
+        width: 94%;
+        height: 40px;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid;
+        border-radius: 4px;
+
+        box-sizing: border-box;
+    }
+   
+    .info-error{
+        display: none;
+        margin: 0 0 1rem 0;
+        color: #E4505D;
+    }
+
+    @media (max-width:786px){
+        .form-content {
+            flex-direction: column;
+            align-content: center;
+    
+            .form-group {
+                width: 100%;
+    
+                .form-input {
+                    width: 100%;
+                }
+    
+                &.error::after {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+}
